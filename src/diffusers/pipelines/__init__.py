@@ -20,6 +20,7 @@ from ..utils import (
 _dummy_objects = {}
 _import_structure = {
     "controlnet": [],
+    "stable_diffusion_control_brush_pipeline": [],
     "controlnet_xs": [],
     "deprecated": [],
     "latent_diffusion": [],
@@ -203,6 +204,7 @@ else:
             "StableUnCLIPImg2ImgPipeline",
             "StableUnCLIPPipeline",
             "StableDiffusionLDM3DPipeline",
+            "stable_diffusion_control_brush_pipeline"
         ]
     )
     _import_structure["stable_diffusion_attend_and_excite"] = ["StableDiffusionAttendAndExcitePipeline"]
@@ -377,6 +379,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             StableDiffusionXLControlNetImg2ImgPipeline,
             StableDiffusionXLControlNetInpaintPipeline,
             StableDiffusionXLControlNetPipeline,
+            StableDiffusionControlNetBrushNetPipeline,###
         )
         from .deepfloyd_if import (
             IFImg2ImgPipeline,

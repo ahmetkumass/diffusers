@@ -79,7 +79,8 @@ else:
             "AutoencoderKLTemporalDecoder",
             "AutoencoderTiny",
             "ConsistencyDecoderVAE",
-            "ControlNetModel",
+            "ControlNetModel", ###
+            "BrushNetModel",
             "I2VGenXLUNet",
             "Kandinsky3UNet",
             "ModelMixin",
@@ -130,6 +131,7 @@ else:
             "RePaintPipeline",
             "ScoreSdeVePipeline",
             "StableDiffusionMixin",
+            "StableDiffusionControlNetBrushNetPipeline",
         ]
     )
     _import_structure["schedulers"].extend(
@@ -317,6 +319,7 @@ else:
             "WuerstchenCombinedPipeline",
             "WuerstchenDecoderPipeline",
             "WuerstchenPriorPipeline",
+            "StableDiffusionControlNetBrushNetPipeline", ###
         ]
     )
 
@@ -474,6 +477,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             AutoencoderTiny,
             ConsistencyDecoderVAE,
             ControlNetModel,
+            BrushNetModel, ###
             I2VGenXLUNet,
             Kandinsky3UNet,
             ModelMixin,
@@ -689,6 +693,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             WuerstchenCombinedPipeline,
             WuerstchenDecoderPipeline,
             WuerstchenPriorPipeline,
+            StableDiffusionControlNetBrushNetPipeline,
         )
 
     try:
